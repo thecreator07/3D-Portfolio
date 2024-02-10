@@ -38,7 +38,6 @@ const planetData = [
 function SolarSystem() {
   const sunref = useRef(null);
   const [ISmobile, setIsmobile] = useState(false);
-  const texture = useTexture("src/assets/tech/IMG20231016105536.jpg");
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(max-width:500px)');
