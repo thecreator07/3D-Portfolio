@@ -32,7 +32,7 @@ const [toggle,settoggle]=useState(false)
           {navLinks.map((link) => (
             <li
               className={`${
-                top === link.title ? "text-white" : "text-secondary"
+                top === link.title ? "text-red" : "text-secondary"
               } cursor-pointer hover:text-white text-center`}
               onClick={() => setTop(link.title)}
             >
