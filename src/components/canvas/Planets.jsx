@@ -1,8 +1,8 @@
 import {
   OrbitControls,
   PerspectiveCamera,
-  Stars,
-  useTexture,
+  // Stars,
+  // useTexture,
 } from "@react-three/drei";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import React, { Suspense, useEffect, useRef, useState } from "react";
@@ -79,7 +79,6 @@ const Planet = React.memo(({ distance, radius, color, name, Speed }) => {
   const [animationState, setAnimationState] = useState(0);
   const planetref = useRef();
   const clockRef=useRef(new THREE.Clock())
-  const texture = useTexture("src/assets/github.png");
 
   
   useFrame(() => {
@@ -106,7 +105,7 @@ const Planet = React.memo(({ distance, radius, color, name, Speed }) => {
 });
 
 const PointLights = React.memo(() => {
-  const { scene } = useThree();
+  // const { scene } = useThree();
   const lightPosition = [0, 0, 0];
   const lightIntensity = 10;
   const lightDistance = 30000;
