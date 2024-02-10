@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { close, logo, menu } from "../assets";
-import { useMediaQuery } from "@material-ui/core";
 
 const Navbar = () => {
-  const isMobileScreens = useMediaQuery("(min-width:400px)");
 const [toggle,settoggle]=useState(false)
   const [top, setTop] = useState("");
   return (
